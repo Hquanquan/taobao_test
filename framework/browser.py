@@ -33,7 +33,7 @@ class Browser(object):
         file_path = os.path.abspath('..') + '\\config\\config.ini'
         print("配置文件config路径==============》", file_path)
         # 读取该文件所有内容
-        config.read(file_path)
+        config.read(file_path, encoding='utf-8')
         # 读取浏览器类型信息,并打印日志
         browser = config.get("browserType", "browserName")
         logger.info("You had select %s browser!" % browser)

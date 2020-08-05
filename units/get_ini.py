@@ -19,7 +19,7 @@ class Get_Config:
         # 实例化
         self.config = configparser.ConfigParser()
         # 读取配置文件
-        self.config.read(path)
+        self.config.read(path, encoding='utf-8')
 
     # 获取所有的sections
     def get_sections(self):
@@ -52,6 +52,7 @@ if __name__ == '__main__':
     # file = r"E:\learning\PycharmProjects\taobao_test\config\config.ini"
     root_path = os.path.abspath(os.path.dirname(__file__)).split('taobao_test')[0] + 'taobao_test'
     file = root_path + '\\config\\config.ini'
+    print(file)
     g = Get_Config(file)
     print(g)
     sections = g.get_sections()
