@@ -2,9 +2,10 @@
 
 # 导入相关的库
 import configparser
-from selenium import webdriver
 # 为了导入自定义的包
-import sys, os
+import os
+
+from selenium import webdriver
 
 # __file__获取执行文件相对路径，整行为取上一级的上一级目录
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

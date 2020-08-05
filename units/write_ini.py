@@ -1,11 +1,11 @@
-'''
+"""
     基础写入配置文件
         -write(fp)                         将config对象写入至某个 .init 格式的文件  Write an .ini-format representation of the configuration state.
         -add_section(section)              添加一个新的section
         -set(section, option, value)       对section中的option进行设置，需要调用write将内容写入配置文件 ConfigParser2
         -remove_section(section)           删除某个 section
         -remove_option(section, option)    删除某个 section 下的 option
-'''
+"""
 import configparser
 
 

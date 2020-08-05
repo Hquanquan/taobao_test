@@ -1,4 +1,5 @@
 import configparser
+import os
 
 '''
     基础读取配置文件
@@ -48,7 +49,9 @@ class Get_Config:
 
 
 if __name__ == '__main__':
-    file = r"E:\learning\PycharmProjects\taobao_test\config\config.ini"
+    # file = r"E:\learning\PycharmProjects\taobao_test\config\config.ini"
+    root_path = os.path.abspath(os.path.dirname(__file__)).split('taobao_test')[0] + 'taobao_test'
+    file = root_path + '\\config\\config.ini'
     g = Get_Config(file)
     print(g)
     sections = g.get_sections()

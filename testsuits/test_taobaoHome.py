@@ -8,17 +8,17 @@ class TaobaoHome(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        '''
+        """
         初始化操作
         打开浏览器
             1、实例化一个浏览器对象 browser
                 1、先创建一个浏览器的类 Browser,已在frameword文件夹创建该类
                 2、导入该类，使用from framework.browser import Browser导入，注意
                 3、实例化对象 browser = Browser(cls)
-            2、调用browser打开浏览器,并赋值给cls.driver使其成为该测试类的属性:  
+            2、调用browser打开浏览器,并赋值给cls.driver使其成为该测试类的属性:
              cls.driver = browser.open_browser(cls)
 
-        '''
+        """
         cls.browser = Browser(cls)
         cls.driver = cls.browser.open_browser(cls)
         cls.taobaohomepage = TaobaoHomePage(cls.driver)

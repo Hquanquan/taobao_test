@@ -4,10 +4,12 @@ import HTMLTestRunner
 import os
 from datetime import date
 # from test_taobaoHome import TaobaoHome
-from test_taobaohome_nav import test_TaobaoHome_Page_nav
+
 
 # 保存文件的设置
 # 获取当天日期
+from testsuits.test_taobaohome_nav import test_TaobaoHome_Page_nav
+
 now = date.today()
 # 格式化日期
 dateStr = now.strftime('%Y-%m-%d')
