@@ -74,7 +74,7 @@ class Demo(unittest.TestCase):
         # __file__获取执行文件相对路径，整行为取上一级的上一级目录
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         print(BASE_DIR)
-
+#       新增一行,提交到本地仓库
 
 if __name__ == '__main__':
     unittest.main()
