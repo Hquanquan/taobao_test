@@ -1,0 +1,98 @@
+You had select Chrome browser!
+The test server url is https://www.taobao.com/
+Starting Chorme browser!
+Open url https://www.taobao.com/ 
+Set implicitly wait 10
+Had find the element ' 中国大陆
+ ' successfulby xpath via value://*[@id="J_SiteNavBdL"]/li[1]
+The mouse move on 中国大陆
+
+全球
+中国大陆
+中国香港
+中国台湾
+中国澳门
+韩国
+马来西亚
+澳大利亚
+新加坡
+新西兰
+加拿大
+美国
+日本
+Had find the element ' 亲，请登录 ' successfulby xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]
+The emement was click
+Click back to current page.
+Had find the element ' 免费注册 ' successfulby xpath via value://*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[2]
+The emement was click
+Current page title is 账户注册 | 淘宝网
+Click back to current page.
+Had find the element ' 手机逛淘宝 ' successfulby id via value:J_SiteNavMobile
+The emement was click
+Current page title is PC下载页
+Click back to current page.
+Had find the element ' 我的淘宝
+ ' successfulby id via value:J_SiteNavMytaobao
+The mouse move on 我的淘宝
+
+已买到的宝贝
+我的足迹
+Had find the element ' 我的淘宝
+
+已买到的宝贝
+我的足迹 ' successfulby id via value:J_SiteNavMytaobao
+The emement was click
+Click back to current page.
+Had find the element ' 
+购物车
+ ' successfulby id via value:J_MiniCart
+The emement was click
+Click back to current page.
+Had find the element ' 
+收藏夹
+ ' successfulby xpath via value://*[@id="J_SiteNavFavor"]
+The mouse move on 
+收藏夹
+
+收藏的宝贝
+收藏的店铺
+Had find the element ' 
+收藏夹
+
+收藏的宝贝
+收藏的店铺 ' successfulby xpath via value://*[@id="J_SiteNavFavor"]
+The emement was click
+Click back to current page.
+Had find the element ' 商品分类 ' successfulby xpath via value://*[@id="J_SiteNavCatalog"]/div/a/span
+The emement was click
+Current page title is 淘宝首页行业市场
+Click back to current page.
+Had find the element ' 千牛卖家中心
+ ' successfulby id via value:J_SiteNavSeller
+The emement was click
+Click back to current page.
+Had find the element ' 千牛卖家中心
+ ' successfulby id via value:J_SiteNavSeller
+The mouse move on 千牛卖家中心
+
+免费开店
+已卖出的宝贝
+出售中的宝贝
+卖家服务市场
+卖家培训中心
+体检中心
+问商友
+Click back to current page.
+Had find the element ' 联系客服 ' successfulby xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+The emement was click
+Current page title is 服务中心
+Click back to current page.
+Had find the element ' 联系客服 ' successfulby xpath via value://*[@id="J_SiteNavService"]/div[1]/a/span
+The mouse move on 联系客服
+Click back to current page.
+Had find the element ' 网站导航 ' successfulby xpath via value://*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]
+The mouse move on 网站导航
+Had find the element ' 网站导航 ' successfulby xpath via value://*[@id="J_SiteNavSitemap"]/div[1]/a/span[2]
+The emement was click
+Current page title is 网址导航
+Click back to current page.

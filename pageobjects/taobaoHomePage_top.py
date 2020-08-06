@@ -11,7 +11,7 @@ import random
 from units.base_page import BasePage
 
 
-class TaoBaoHomePage(BasePage):
+class TaoBaoHomePage_Top(BasePage):
     # 未登录时，亲，请登录 免费注册
     # 点击亲，请登录
     nav__left_Login = 'xpath=>//*[@id="J_SiteNavLogin"]/div[1]/div[1]/a[1]'
@@ -140,7 +140,16 @@ class TaoBaoHomePage(BasePage):
     # 悬停网站导航
     def move_to_nav_right_J_SiteNavSitemap(self):
         self.move_to_element(self.nav_right_J_SiteNavSitemap)
-
     # 点击网站导航
     def click_nav_right_J_SiteNavSitemap(self):
         self.click(self.nav_right_J_SiteNavSitemap)
+
+    # 顶部banner
+    J_Banner = 's=>#J_Banner .banner-wrap a img'
+
+    # 判断这个顶部banner元素是否存在页面中
+    def isJ_BannerExist(self):
+        flag = self.isElementExist(self.J_Banner)
+        return flag
+
+

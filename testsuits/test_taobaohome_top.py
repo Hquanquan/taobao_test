@@ -7,7 +7,7 @@ import unittest
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # sys.path.append(BASE_DIR)
 from framework.browser import Browser
-from pageobjects.taobaoHome_page import TaoBaoHomePage
+from pageobjects.taobaoHomePage_top import TaoBaoHomePage_Top
 
 
 class test_TaobaoHome_Page_nav(unittest.TestCase):
@@ -16,7 +16,7 @@ class test_TaobaoHome_Page_nav(unittest.TestCase):
     def setUpClass(cls):
         cls.browser = Browser(cls)
         cls.driver = cls.browser.open_browser(cls)
-        cls.taobaohomepage = TaoBaoHomePage(cls.driver)
+        cls.taobaohomepage = TaoBaoHomePage_Top(cls.driver)
 
     @classmethod
     def tearDownClass(cls):
@@ -31,9 +31,10 @@ class test_TaobaoHome_Page_nav(unittest.TestCase):
         time.sleep(2)
         return True
 
+    '''
     # @unittest.skip("暂不执行")
     def test000_move_to_nav_left_location(self):
-        '''鼠标悬停中国大陆2秒,验证是否弹出列表'''
+        """鼠标悬停中国大陆2秒,验证是否弹出列表"""
         self.taobaohomepage.move_to_nav_left_location()
         time.sleep(2)
         classname1 = self.driver.find_element_by_xpath('//*[@id="J_SiteNavBdL"]/li[1]').get_attribute("class")
@@ -185,6 +186,14 @@ class test_TaobaoHome_Page_nav(unittest.TestCase):
         time.sleep(1)
         self.taobaohomepage.back_browser()
         # 网址导航
+    '''
+
+    def test015_top_bannner(self):
+        flag = self.taobaohomepage.isJ_BannerExist()
+        if flag:
+            print("该banner元素存在页面中")
+        else:
+            print("该banner元素不存在页面中")
 
 
 if __name__ == '__main__':

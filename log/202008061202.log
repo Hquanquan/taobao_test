@@ -1,0 +1,6 @@
+You had select Chrome browser!
+The test server url is https://www.taobao.com/
+Starting Chorme browser!
+Open url https://www.taobao.com/ 
+Set implicitly wait 10
+the elements <selenium.webdriver.remote.webelement.WebElement (session="c69f2432271669a00a3f863251568f24", element="9d1fb01f-3e31-46d8-be69-184015b9a7fe")> is exist!
